@@ -1,0 +1,27 @@
+.visit {
+
+    background-color: var(--beige);
+    padding: var(--section-padding);
+
+    &__body {
+        display: grid;
+        gap: var(--container-padding);
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 24px;    gap: 38px;
+    }
+
+    &__subtitle {
+         font-size: 24px;
+    }
+
+    &__iframe {
+        width: 100%;
+        height: 50vh;
+    }
+}
