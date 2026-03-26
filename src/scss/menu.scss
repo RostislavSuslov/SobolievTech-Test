@@ -1,2 +1,24 @@
 @use './variables' as *;
 
+.menu {
+    background-color: var(--black);
+    color: var(--white);
+    padding: var(--section-padding);
+    &__content {
+        display: grid;
+        gap: var(--container-padding);
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &__card {
+        box-shadow: var(--shadow-soft);
+        border-radius: var(--card-border-radius);
+        background-color: var(--accent);
+        padding: var(--container-padding);
+        color: var(--tertiary)
+    }
+
+    &__card-title {
+        font-size: var(--card-title-size);
+    }
+}
