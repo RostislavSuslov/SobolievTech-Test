@@ -1,1 +1,28 @@
 @use './variables' as *;
+
+.about {
+    background-color: var(--secondary);
+    padding: var(--section-padding);
+
+    color: var(--white);
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+
+        &-item {
+            margin-bottom: 1em;
+        }
+
+        &-image-box {
+            border-radius: var(--card-border-radius);
+            overflow: hidden;
+         
+        } 
+    }
+ 
+
+
+}
