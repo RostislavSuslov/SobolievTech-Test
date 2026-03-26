@@ -1,1 +1,46 @@
 @use './variables' as *;
+
+.hero {
+    background-color: var(--primary);
+    padding: var(--section-padding);
+    text-align: center;
+    color: var(--white);
+
+    &__logo {
+        margin-bottom: 3em;
+    }
+
+
+    &__slogan {
+        font-size: var(--card-title-size);
+        font-weight: 400;
+        margin-bottom: 2em;
+    }
+
+    &__button {
+        display: inline-block;
+        padding: 19px 82px 23px;
+        font-size: 24px;
+        font-weight: 400;
+        font-family: var(--heading-font);
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        user-select: none;
+        line-height: 1.5;
+        transition: .15s;
+        outline: none;
+        border-radius: 60px;
+        border: none;
+        position: relative;
+        color: var(--primary);
+        background-color: var(--white);
+        cursor: pointer;
+        transition: color 0.3s, background-color 0.3s;
+        &:hover,
+        &:focus {
+            color: var(--white);
+            background-color: var(--secondary);
+        }
+    }
+}
